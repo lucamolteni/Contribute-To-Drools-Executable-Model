@@ -64,7 +64,6 @@ Verify the Executable Model has been built in the KJAR, you can for example usin
 `jar -tf target/name_of_the_kjar.jar`
 
 And you'll see all the Executable Model classes under and the `drools-model` file. 
-You can also check the `target` subfolder of maven and you'll see the generated files.
 Yet another way to do it is to check the maven log for this phrase:
 
 ```
