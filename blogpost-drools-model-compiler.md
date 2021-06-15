@@ -2,7 +2,7 @@
 
 ## What is the Executable Model?
 
-The Executable Model is a new way to execute business rules in Drool. 
+The Executable Model is a new way to execute business rules in Drools. 
 It's based on a Java representation of the rule structures that provides a few advantages such as faster startup time and better memory allocation at runtime.
 You can check out the details in the [Drools Documentation](https://docs.jboss.org/drools/release/7.55.0.Final/drools-docs/html_single/index.html) or in other blog posts such as [Mario's](https://blog.kie.org/2021/06/profiling-and-optimizing-executable-model-generation.html).
 
@@ -26,7 +26,7 @@ Imagine that you're interested in contributing to Drools, what should you do whe
 
 Firstly we should understand where the problem is in Drools and if it's eventually related to the Executable Model.
 To do that, we need to create the smallest piece of code that shows the problem: this is what we called a "bug reproducer" (also just "reproducer"). 
-If you provide a bug report to [Zulip](https://blog.kie.org/2020/04/new-community-channels-on-zulip-chat.html), mailing lists or [Stack Overflow](https://drools.org/community/getHelp.html)
+If you provide a bug report to [Zulip](https://blog.kie.org/2020/04/new-community-channels-on-zulip-chat.html), [mailing lists]((https://drools.org/community/getHelp.html)) or [Stack Overflow](https://drools.org/community/getHelp.html)
 the team will ask you to create such reproducer. There are two ways to do it:
 
 1) If you're familiar with the [Drools GitHub repository](https://github.com/kiegroup/drools) you can write the test directly in your own fork of the original repository and create a PR against it. 
@@ -59,11 +59,11 @@ as it'll try run the tests using the classic engine but we don't have the `drool
 
 ![kjar](kjar.gif)
 
-Verify the Executable Model has been built in the KJAR, you can for example using the command
+Verify the Executable Model has been built in the KJAR, you can for example using this command to view the content inside the KJAR:
 
 `jar -tf target/name_of_the_kjar.jar`
 
-And you'll see all the Executable Model classes under and the `drools-model` file. 
+You will see all the Executable Model classes under and the `drools-model` file. 
 Another way to do it is to check the maven log for this phrase:
 
 ```
