@@ -25,7 +25,7 @@ Imagine that you're interested in contributing to Drools, what should you do whe
 First we should understand how to recognise whether it's an error with Drools or specifically in the Executable Model. 
 
 To do that, we need to create the smallest piece of code that shows the problem: this is what we called a "bug reproducer" (also just "reproducer"). 
-If you provide a bug report to [Zulip](https://blog.kie.org/2020/04/new-community-channels-on-zulip-chat.html), mailing lists or [Stack Overflow](https://drools.org/community/getHelp.html)
+If you provide a bug report to [Zulip](https://blog.kie.org/2020/04/new-community-channels-on-zulip-chat.html), [mailing lists](https://drools.org/community/getHelp.html) or [Stack Overflow](https://drools.org/community/getHelp.html)
 the team will ask you to create such reproducer. There are two ways to do it:
 
 1) If you're familiar with the [Drools GitHub repository](https://github.com/kiegroup/drools) you can write the test directly in your own fork of the original repository and create a PR against it. 
