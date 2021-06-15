@@ -58,11 +58,11 @@ as it'll try run the tests using the classic engine but we don't have the `drool
 
 ![kjar](kjar.gif)
 
-Verify the Executable Model has been built in the KJAR, you can for example using the command
+Verify the Executable Model has been built in the KJAR, you can for example using the command to view the content inside the KJAR:
 
 `jar -tf target/name_of_the_kjar.jar`
 
-And you'll see all the Executable Model classes under and the `drools-model` file. 
+You will see all the Executable Model classes under and the `drools-model` file. 
 You can also check the `target` subfolder of maven and you'll see the generated files.
 Yet another way to do it is to check the maven log for this phrase:
 
