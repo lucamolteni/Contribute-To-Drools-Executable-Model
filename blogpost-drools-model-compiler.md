@@ -75,7 +75,7 @@ INFO] Found 7 generated files in Canonical Model
 ```
 
 Create another project called `runner` that has the original project as a dependency in the Maven `pom.xml`. 
-You can use the archetype again, but you're going to have to change a few things
+The same archetype can be used again, but you have to change a few things
 
 - Remove all the classes in `src/main/java`
 - Remove the DRL files, as this project only consumes KJARs
