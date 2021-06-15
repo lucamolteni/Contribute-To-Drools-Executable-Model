@@ -3,7 +3,7 @@
 ## What is the Executable Model?
 
 The Executable Model is a new way to execute business rules in Drools. 
-It's based on a Java representation of the rule structures that provides a few advantages such as faster startup time and better memory allocation at runtime.
+It's based on a Java representation of the rule structure that provides a few advantages such as faster startup time and better memory allocation at runtime.
 You can check out the details in the [Drools Documentation](https://docs.jboss.org/drools/release/7.55.0.Final/drools-docs/html_single/index.html) or in other blog posts such as [Mario's](https://blog.kie.org/2021/06/profiling-and-optimizing-executable-model-generation.html).
 
 KJARs built with the `kie-maven-plugin` have the Executable Model enabled since 7.33.0.Final by default and it's the main technology underneath [Kogito](https://kogito.kie.org). 
@@ -18,7 +18,7 @@ Luckily, the Executable Model Compiler is a good way to start, for various reaso
 * It doesn't require deep understanding of the Drools' internal algorithm, PHREAK
 * There always is a former counterpart to verify the code against 
 
-Regarding the third point, we want to make sure that Drools is behaving in the exact same way while using the former runtime (also called `DRL`) and the new one (called `PatternDSL`).
+Regarding the third point, we want Drools to behave in the exact same way while using the former runtime (also called `DRL`) and the new one (called `PatternDSL`).
 
 ## Contributing: showing a problem 
 
