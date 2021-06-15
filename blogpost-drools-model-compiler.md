@@ -18,7 +18,7 @@ Luckily, the Executable Model Compiler is a good way to start, for various reaso
 * It doesn't require deep understanding of the Drools' internal algorithm, PHREAK
 * There always is a former counterpart to verify the code against 
 
-Regarding the third point, we want to make sure that Drools is behaving in the exact same way while using the former runtime (also called "DRL") and the new one (called `PatternDSL`).
+Regarding the third point, we want to make sure that Drools is behaving in the exact same way while using the former runtime (also called `DRL`) and the new one (called `PatternDSL`).
 
 ## Contributing: showing a problem 
 
