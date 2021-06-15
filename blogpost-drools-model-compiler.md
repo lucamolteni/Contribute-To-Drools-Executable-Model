@@ -2,7 +2,9 @@
 
 ## What is the Executable Model?
 
-The Executable Model is a new way to execute business rules in Drools which provides a much faster startup time. You can check out the details in the [Drools Documentation](https://docs.jboss.org/drools/release/7.55.0.Final/drools-docs/html_single/index.html) or in other blog posts such as [Mario's](https://blog.kie.org/2021/06/profiling-and-optimizing-executable-model-generation.html).
+The Executable Model is a new way to execute business rules in Drool. 
+It's based on a Java representation of the rule structures that provides a few advantages such as faster startup time and better memory allocation at runtime.
+You can check out the details in the [Drools Documentation](https://docs.jboss.org/drools/release/7.55.0.Final/drools-docs/html_single/index.html) or in other blog posts such as [Mario's](https://blog.kie.org/2021/06/profiling-and-optimizing-executable-model-generation.html).
 
 KJARs built with the `kie-maven-plugin` have the Executable Model enabled since 7.33.0.Final by default and it's the main technology underneath [Kogito](https://kogito.kie.org). 
 With the "Executable Model Compiler", a module you can find in the  `drools-model-compiler` directory, DRL files are transformed into a Java DSL.
@@ -22,8 +24,7 @@ Regarding the third point, we want to make sure that Drools is behaving in the e
 
 Imagine that you're interested in contributing to Drools, what should you do when you find a problem and you think it's related to the Executable Model? 
 
-First we should understand how to recognise whether it's an error with Drools or specifically in the Executable Model. 
-
+Firstly we should understand where the problem is in Drools and if it's eventually related to the Executable Model.
 To do that, we need to create the smallest piece of code that shows the problem: this is what we called a "bug reproducer" (also just "reproducer"). 
 If you provide a bug report to [Zulip](https://blog.kie.org/2020/04/new-community-channels-on-zulip-chat.html), mailing lists or [Stack Overflow](https://drools.org/community/getHelp.html)
 the team will ask you to create such reproducer. There are two ways to do it:
@@ -68,7 +69,7 @@ Yet another way to do it is to check the maven log for this phrase:
 
 ```
 
-INFO] Found 7 generated files in Canonical Model
+[INFO] Found 7 generated files in Canonical Model
 [INFO] Generating /Users/lmolteni/git/contribute/reproducer-kjar/target/generated-sources/drools-model-compiler/main/java/./org/example/P41/LambdaExtractor41A2683D222972683028514525A5437B.java
 ...
 
